@@ -5,7 +5,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
-  width: 500px;
+  width: 450px;
   margin: 0 ;
   padding:0px;
 }
@@ -33,7 +33,6 @@ body{
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
-  position: relative
 }
 
 #sqr-119,#sqr-120,#sqr-135,#sqr-136,#sqr-238,#sqr-237,#sqr-236,#sqr-235,#sqr-234,
@@ -57,9 +56,24 @@ body{
   display:flex;
   justify-self:center;
   padding:0px 227px 0px 226px;
-  margin:0px;
+  margin-top:0px;
   border: 2px green;
   border-style:solid;
 }
-    
+
+h1{
+  margin:0;
+  text-align: center;
+  color: white
+}
+
+button{
+  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: pink;
+}
 

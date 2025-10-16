@@ -60,7 +60,7 @@ and moves the pac-man character accordingly
 .game ends when lives = 0, score is shown and reset button (or play agin button) is shown
 
 */
-let score = 0;
+let score;
 let dots;
 let ghostMovement;
 let color;
@@ -68,19 +68,29 @@ let innit;
 let pacman;
 let pacMovement;
 let pacPosition;
+let handleWin;
+let removePacman;
 
 
 squareEls = document.querySelectorAll(".sqr");
 scoreEl = document.querySelector("#score");
 scoreNumberEl = document.querySelector("#score-number");
 pacman = document.querySelector(".pacman");
+h1El = document.querySelector("h1");
+buttonEl = document.querySelector("button");
+
 
 index = Number(pacman.id.split("-")[1]);
 
 
-innit = () => {
+init = () => {
+    removePacman();
+    score = 0;
     addDots();
+    dots = true;
     squareEls[151].classList.add("pacman");
+    h1El.style.visibility = "hidden";
+    buttonEl.style.visibility = "hidden";
 }
 
 addDots = () => {
@@ -105,13 +115,23 @@ addDots = () => {
 
 //56.40000
 
+handleWin = () => {
+    if (dots) {return};
+    h1El.style.visibility = "visible";
+    buttonEl.style.visibility = "visible";
+}
 
+removePacman = () => {
+    index = 151;
+    squareEls.forEach((square) => {
+        square.classList.remove("pacman");
+    });
+};
 
 
 pacMovement = (event) => {
-//     pacPosition = pacman.getBoundingClientRect();
-//     console.log(pacPosition.top, pacPosition.right, pacPosition.bottom, pacPosition.left);
-    if (event.repeat === true) {return}; 
+    if (dots === false) {return};
+    //if (event.repeat === true) {return}; 
     switch (event.key) {
         
         case "ArrowDown":
@@ -157,17 +177,29 @@ pacMovement = (event) => {
         scoreNumberEl.textContent = score;
     };
     
-
-    //console.log(event);
+    for (let i = 0; i < squareEls.length; i++) {
+        if (squareEls[i].classList.contains("dot")){
+            return    
+        }
+        if (i === 255) {
+            if (squareEls[i].classList.contains("dot") === false) {
+                dots = false;
+            }
+        };
     };
+    handleWin();
+}
+        
+   
 
 
-innit();
+init();
 
 window.addEventListener("keydown", pacMovement);
+buttonEl.addEventListener("click", () => {
+    init();
+});
 
-// This is for the pacMovement function
-// 
 
 
 
