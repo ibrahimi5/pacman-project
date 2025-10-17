@@ -35,6 +35,34 @@ body{
   background-position: center;
 }
 
+.green-ghost{
+  background-image:url(/assets/green-ghost.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+}
+
+.yellow-ghost{
+  background-image:url(/assets/yellow-ghost.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+}
+
+.blue-ghost{
+  background-image:url(/assets/blue-ghost.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+}
+
+.purple-ghost{
+  background-image:url(/assets/purple-ghost.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+}
+
 #sqr-119,#sqr-120,#sqr-135,#sqr-136,#sqr-238,#sqr-237,#sqr-236,#sqr-235,#sqr-234,
 #sqr-219,#sqr-207,#sqr-203,#sqr-205,#sqr-189,#sqr-173,#sqr-174,#sqr-171,#sqr-170,
 #sqr-168,#sqr-165,#sqr-166,#sqr-164,#sqr-162,#sqr-161,#sqr-178,#sqr-194,#sqr-196,
