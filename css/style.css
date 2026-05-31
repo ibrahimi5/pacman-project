@@ -7,10 +7,9 @@ body{
   justify-self: center;
   width: 450px;
   margin: 0 ;
-  padding:0px;
 }
 .sqr {
-  width: 6%;
+  width: 6.25%;
   aspect-ratio: 1 / 1;
   border: 3px transparent;
   background-color: black;
@@ -78,15 +77,21 @@ body{
 }
 
 #score{
+
   text-align: center;
   background-color: black;
   color: white;
   display:flex;
-  justify-self:center;
-  padding:0px 227px 0px 226px;
-  margin-top:0px;
+  margin: 0 auto;
+  justify-content: center;
+  width: 450px;
   border: 2px green;
   border-style:solid;
+}
+
+#score-number{
+  text-align: center;
+  align-items: center;
 }
 
 h1{
