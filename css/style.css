@@ -28,35 +28,35 @@ body{
 }
 
 .pacman{
-  background-image:url(/assets/yellow-circle.png);
+  background-image:url(../assets/yellow-circle.png);
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
 }
 
 .green-ghost{
-  background-image:url(/assets/green-ghost.png);
+  background-image:url(../assets/green-ghost.png);
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
 }
 
 .yellow-ghost{
-  background-image:url(/assets/yellow-ghost.png);
+  background-image:url(../assets/yellow-ghost.png);
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
 }
 
 .blue-ghost{
-  background-image:url(/assets/blue-ghost.png);
+  background-image:url(../assets/blue-ghost.png);
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
 }
 
 .purple-ghost{
-  background-image:url(/assets/purple-ghost.png);
+  background-image:url(../assets/purple-ghost.png);
   background-repeat: no-repeat;
   background-size: 22px;
   background-position: center;
